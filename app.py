@@ -22,16 +22,16 @@ class SurfSpot:
 
 def create_driver():
    chrome_options=webdriver.ChromeOptions()
-   chrome_options.add_argument("--headless")
+   # chrome_options.add_argument("--headless")
    return webdriver.Chrome(options=chrome_options)
 
 def get_spot_info(spot_id):
     driver=create_driver()
     driver.get(f'https://www.surfline.com/surf-report/{spot_id}')
-    soup=BeautifulSoup(driver.page_source)
+    soup=BeautifulSoup(driver.page_source, 'html.parser')
 
     def find_element(selector):
-        return soup.find_all(selector)
+        return soup.select(selector)[0].text
 
     spot_info=SurfSpot(
         find_element('div.ForecastHeader_headerDetails__GHe9U div.MuiStack-root div h1'),
@@ -49,4 +49,5 @@ spots_info=[]
 for spot in spots:
     spots_info.append(get_spot_info(spot))
 
-print(spots_info)
+for info in spots_info:
+    print(info.name, info.size_human_readable, info.size_ft, info.wind_dir, info.wind_speed, info.grade)
