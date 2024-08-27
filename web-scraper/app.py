@@ -17,7 +17,7 @@ def get_spot_info(spot_url):
         return soup.select(selector)[0].text
 
     spot_info={
-        'name': find_element('div.ForecastHeader_headerDetails__GHe9U div.MuiStack-root div h1'),
+        'name': find_element('div.ForecastHeader_headerDetails__GHe9U div.MuiStack-root div h1').replace(' Surf Report',''),
         'sizeHumanReadable': find_element('div.CurrentSurfConditionsCard_title__ssxa_ h2'),
         'sizeFt': find_element('div.CurrentWaveHeightAndRating_waveHeight__Hj9bN p span'),
         'windDir': find_element('p.CurrentWind_directionType__BYdBg'),

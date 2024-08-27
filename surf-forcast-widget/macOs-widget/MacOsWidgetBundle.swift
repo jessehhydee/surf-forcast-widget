@@ -1,5 +1,5 @@
 //
-//  macOs_widgetBundle.swift
+//  MacOsWidgetBundle.swift
 //  macOs-widget
 //
 //  Created by Jesse Hyde on 26/08/2024.
@@ -9,8 +9,8 @@ import WidgetKit
 import SwiftUI
 
 @main
-struct macOs_widgetBundle: WidgetBundle {
+struct MacOsWidgetBundle: WidgetBundle {
     var body: some Widget {
-        macOs_widget()
+        MacOsWidget()
     }
 }

@@ -7,18 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0ABB89B12C7C1489006DAE23 /* surf_forcast_widgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89B02C7C1489006DAE23 /* surf_forcast_widgetApp.swift */; };
+		0ABB89B12C7C1489006DAE23 /* SurfForcastWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89B02C7C1489006DAE23 /* SurfForcastWidgetApp.swift */; };
 		0ABB89B32C7C1489006DAE23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89B22C7C1489006DAE23 /* ContentView.swift */; };
 		0ABB89B52C7C148A006DAE23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABB89B42C7C148A006DAE23 /* Assets.xcassets */; };
 		0ABB89B82C7C148A006DAE23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABB89B72C7C148A006DAE23 /* Preview Assets.xcassets */; };
 		0ABB89C62C7C150B006DAE23 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABB89C52C7C150B006DAE23 /* WidgetKit.framework */; };
 		0ABB89C82C7C150B006DAE23 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABB89C72C7C150B006DAE23 /* SwiftUI.framework */; };
-		0ABB89CB2C7C150B006DAE23 /* macOs_widgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89CA2C7C150B006DAE23 /* macOs_widgetBundle.swift */; };
-		0ABB89CD2C7C150B006DAE23 /* macOs_widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89CC2C7C150B006DAE23 /* macOs_widget.swift */; };
-		0ABB89CF2C7C150B006DAE23 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89CE2C7C150B006DAE23 /* AppIntent.swift */; };
+		0ABB89CB2C7C150B006DAE23 /* MacOsWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89CA2C7C150B006DAE23 /* MacOsWidgetBundle.swift */; };
+		0ABB89CD2C7C150B006DAE23 /* MacOsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89CC2C7C150B006DAE23 /* MacOsWidget.swift */; };
 		0ABB89D12C7C150B006DAE23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABB89D02C7C150B006DAE23 /* Assets.xcassets */; };
 		0ABB89D62C7C150B006DAE23 /* macOs-widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0ABB89C32C7C150B006DAE23 /* macOs-widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		0ABB89DC2C7C3ED8006DAE23 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 0ABB89DB2C7C3ED8006DAE23 /* data.json */; };
+		0ABB89DE2C7C59AE006DAE23 /* SurfSpotElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89DD2C7C59AE006DAE23 /* SurfSpotElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +46,7 @@
 
 /* Begin PBXFileReference section */
 		0ABB89AD2C7C1489006DAE23 /* surf-forcast-widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "surf-forcast-widget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0ABB89B02C7C1489006DAE23 /* surf_forcast_widgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = surf_forcast_widgetApp.swift; sourceTree = "<group>"; };
+		0ABB89B02C7C1489006DAE23 /* SurfForcastWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfForcastWidgetApp.swift; sourceTree = "<group>"; };
 		0ABB89B22C7C1489006DAE23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0ABB89B42C7C148A006DAE23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0ABB89B72C7C148A006DAE23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -55,13 +54,12 @@
 		0ABB89C32C7C150B006DAE23 /* macOs-widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "macOs-widgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ABB89C52C7C150B006DAE23 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		0ABB89C72C7C150B006DAE23 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		0ABB89CA2C7C150B006DAE23 /* macOs_widgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macOs_widgetBundle.swift; sourceTree = "<group>"; };
-		0ABB89CC2C7C150B006DAE23 /* macOs_widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macOs_widget.swift; sourceTree = "<group>"; };
-		0ABB89CE2C7C150B006DAE23 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		0ABB89CA2C7C150B006DAE23 /* MacOsWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOsWidgetBundle.swift; sourceTree = "<group>"; };
+		0ABB89CC2C7C150B006DAE23 /* MacOsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOsWidget.swift; sourceTree = "<group>"; };
 		0ABB89D02C7C150B006DAE23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0ABB89D22C7C150B006DAE23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ABB89D32C7C150B006DAE23 /* macOs_widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOs_widget.entitlements; sourceTree = "<group>"; };
-		0ABB89DB2C7C3ED8006DAE23 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = "../../forcast-data/data.json"; sourceTree = "<group>"; };
+		0ABB89DD2C7C59AE006DAE23 /* SurfSpotElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfSpotElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,12 +104,12 @@
 		0ABB89AF2C7C1489006DAE23 /* surf-forcast-widget */ = {
 			isa = PBXGroup;
 			children = (
-				0ABB89DB2C7C3ED8006DAE23 /* data.json */,
-				0ABB89B02C7C1489006DAE23 /* surf_forcast_widgetApp.swift */,
+				0ABB89B02C7C1489006DAE23 /* SurfForcastWidgetApp.swift */,
 				0ABB89B22C7C1489006DAE23 /* ContentView.swift */,
 				0ABB89B42C7C148A006DAE23 /* Assets.xcassets */,
 				0ABB89B92C7C148A006DAE23 /* surf_forcast_widget.entitlements */,
 				0ABB89B62C7C148A006DAE23 /* Preview Content */,
+				0ABB89DD2C7C59AE006DAE23 /* SurfSpotElement.swift */,
 			);
 			path = "surf-forcast-widget";
 			sourceTree = "<group>";
@@ -136,9 +134,8 @@
 		0ABB89C92C7C150B006DAE23 /* macOs-widget */ = {
 			isa = PBXGroup;
 			children = (
-				0ABB89CA2C7C150B006DAE23 /* macOs_widgetBundle.swift */,
-				0ABB89CC2C7C150B006DAE23 /* macOs_widget.swift */,
-				0ABB89CE2C7C150B006DAE23 /* AppIntent.swift */,
+				0ABB89CA2C7C150B006DAE23 /* MacOsWidgetBundle.swift */,
+				0ABB89CC2C7C150B006DAE23 /* MacOsWidget.swift */,
 				0ABB89D02C7C150B006DAE23 /* Assets.xcassets */,
 				0ABB89D22C7C150B006DAE23 /* Info.plist */,
 				0ABB89D32C7C150B006DAE23 /* macOs_widget.entitlements */,
@@ -228,7 +225,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ABB89B82C7C148A006DAE23 /* Preview Assets.xcassets in Resources */,
-				0ABB89DC2C7C3ED8006DAE23 /* data.json in Resources */,
 				0ABB89B52C7C148A006DAE23 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,8 +244,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ABB89DE2C7C59AE006DAE23 /* SurfSpotElement.swift in Sources */,
 				0ABB89B32C7C1489006DAE23 /* ContentView.swift in Sources */,
-				0ABB89B12C7C1489006DAE23 /* surf_forcast_widgetApp.swift in Sources */,
+				0ABB89B12C7C1489006DAE23 /* SurfForcastWidgetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,9 +254,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ABB89CB2C7C150B006DAE23 /* macOs_widgetBundle.swift in Sources */,
-				0ABB89CD2C7C150B006DAE23 /* macOs_widget.swift in Sources */,
-				0ABB89CF2C7C150B006DAE23 /* AppIntent.swift in Sources */,
+				0ABB89CB2C7C150B006DAE23 /* MacOsWidgetBundle.swift in Sources */,
+				0ABB89CD2C7C150B006DAE23 /* MacOsWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
