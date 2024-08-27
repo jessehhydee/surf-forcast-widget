@@ -11,6 +11,7 @@ func ParseSurfSpotJSON() -> SurfSpots? {
     var surfSpots: SurfSpots?
     
     let homeURL = FileManager.default.homeDirectoryForCurrentUser
+    print("homeURL: \(homeURL)")
     let forcastDataURL = homeURL.appendingPathComponent("code/surf-notify/forcast-data/data.json")
     
     do {

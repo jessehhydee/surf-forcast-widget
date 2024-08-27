@@ -23,14 +23,17 @@ struct ForcastProvider: TimelineProvider {
     )
     
     func placeholder(in context: Context) -> ForcastEntry {
+        print("PLACEHOLDER")
         return placeholderEntry
     }
     
     func getSnapshot(in context: Context, completion: @escaping (ForcastEntry) -> ()) {
+        print("SNAPSHOT")
         completion(placeholderEntry)
     }
     
     func getTimeline(in context: Context, completion: @escaping (Timeline<ForcastEntry>) -> Void) {
+        print("TIMELINE")
         let currentDate = Date()
         var entries: [ForcastEntry] = []
         
