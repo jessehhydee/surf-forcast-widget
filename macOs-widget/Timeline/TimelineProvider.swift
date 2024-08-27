@@ -7,8 +7,8 @@
 
 import WidgetKit
 
-struct ForcastProvider: TimelineProvider {
-    private let placeholderEntry = ForcastEntry(
+struct ForecastProvider: TimelineProvider {
+    private let placeholderEntry = ForecastEntry(
         date: Date(),
         spots: [
             Spot(
@@ -22,23 +22,23 @@ struct ForcastProvider: TimelineProvider {
         ]
     )
     
-    func placeholder(in context: Context) -> ForcastEntry {
+    func placeholder(in context: Context) -> ForecastEntry {
         return placeholderEntry
     }
     
-    func getSnapshot(in context: Context, completion: @escaping (ForcastEntry) -> ()) {
+    func getSnapshot(in context: Context, completion: @escaping (ForecastEntry) -> ()) {
         completion(placeholderEntry)
     }
     
-    func getTimeline(in context: Context, completion: @escaping (Timeline<ForcastEntry>) -> Void) {
+    func getTimeline(in context: Context, completion: @escaping (Timeline<ForecastEntry>) -> Void) {
         let currentDate = Date()
-        var entries: [ForcastEntry] = []
+        var entries: [ForecastEntry] = []
         
         for hourOffset in 0 ..< 6 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
             let spots = SurflineWebScraper()!
             print("spots: \(spots)")
-            let entry = ForcastEntry(date: entryDate, spots: spots)
+            let entry = ForecastEntry(date: entryDate, spots: spots)
             entries.append(entry)
         }
         

@@ -1,6 +1,6 @@
-# surf-forcast-widget
+# surf-forecast-widget
 
-A macOS application that displays a users favourite surf spots current forcast.
+A macOS application that displays a users favourite surf spots current forecast.
 MacOS widget also created to compliment application. 
 Is easily be placed on in widgets sidebar or Desktop.
 It allows for quick and easy viewing of each spot, displaying the following data points:

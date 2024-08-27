@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  surf-forcast-widget
+//  surf-forecast-widget
 //
 //  Created by Jesse Hyde on 26/08/2024.
 //

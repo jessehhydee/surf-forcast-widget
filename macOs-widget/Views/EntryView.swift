@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct WidgetEntryView : View {
-    var entry: ForcastProvider.Entry
+    var entry: ForecastProvider.Entry
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10.0) {

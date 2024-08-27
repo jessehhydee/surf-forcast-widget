@@ -1,6 +1,6 @@
 //
 //  WebScraper.swift
-//  surf-forcast-widget
+//  surf-forecast-widget
 //
 //  Created by Jesse Hyde on 27/08/2024.
 //

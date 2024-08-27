@@ -7,7 +7,7 @@
 
 import WidgetKit
 
-struct ForcastEntry: TimelineEntry {
+struct ForecastEntry: TimelineEntry {
     let date: Date
     let spots: [Spot]
 }

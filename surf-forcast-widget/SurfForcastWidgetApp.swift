@@ -1,6 +1,6 @@
 //
-//  SurfForcastWidgetApp.swift
-//  surf-forcast-widget
+//  SurfForecastWidgetApp.swift
+//  surf-forecast-widget
 //
 //  Created by Jesse Hyde on 26/08/2024.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct SurfForcastWidgetApp: App {
+struct SurfForecastWidgetApp: App {
     let spots = SurflineWebScraper()
  
     var body: some Scene {
