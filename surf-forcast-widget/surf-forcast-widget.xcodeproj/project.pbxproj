@@ -12,7 +12,6 @@
 		0A0161F82C7D769E00437D8C /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0161F72C7D769E00437D8C /* EntryView.swift */; };
 		0A0161FB2C7D76D800437D8C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0161FA2C7D76D800437D8C /* ColorExtension.swift */; };
 		0A0161FE2C7D773900437D8C /* SurfSpots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0161FD2C7D773900437D8C /* SurfSpots.swift */; };
-		0A0162012C7D777600437D8C /* ParseSurfSpotJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162002C7D777600437D8C /* ParseSurfSpotJSON.swift */; };
 		0A0162032C7D778300437D8C /* GetGradeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162022C7D778300437D8C /* GetGradeColor.swift */; };
 		0A0162062C7D77C900437D8C /* TimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162052C7D77C900437D8C /* TimelineProvider.swift */; };
 		0A0162082C7D77D100437D8C /* TimelineEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162072C7D77D100437D8C /* TimelineEntry.swift */; };
@@ -20,10 +19,11 @@
 		0A01620F2C7D78AD00437D8C /* NoSurfSpotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01620E2C7D78AD00437D8C /* NoSurfSpotView.swift */; };
 		0A0162112C7D791000437D8C /* GetGradeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162102C7D791000437D8C /* GetGradeColor.swift */; };
 		0A0162132C7D794C00437D8C /* SurfSpots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162122C7D794C00437D8C /* SurfSpots.swift */; };
-		0A0162152C7D797000437D8C /* ParseSurfSpotJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162142C7D797000437D8C /* ParseSurfSpotJSON.swift */; };
 		0A0162182C7D79C200437D8C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162172C7D79C200437D8C /* ColorExtension.swift */; };
-		0A01621A2C7D8AA200437D8C /* BookmarkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162192C7D8AA200437D8C /* BookmarkManager.swift */; };
-		0A01621C2C7D8CAE00437D8C /* AllowFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01621B2C7D8CAE00437D8C /* AllowFolder.swift */; };
+		0A15027D2C7D9D1E00339813 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 0A15027C2C7D9D1E00339813 /* SwiftSoup */; };
+		0A15027F2C7DA16200339813 /* WebScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A15027E2C7DA16200339813 /* WebScraper.swift */; };
+		0A1502812C7DA2EA00339813 /* WebScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1502802C7DA2EA00339813 /* WebScraper.swift */; };
+		0A1502832C7DA52700339813 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 0A1502822C7DA52700339813 /* SwiftSoup */; };
 		0ABB89B12C7C1489006DAE23 /* SurfForcastWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89B02C7C1489006DAE23 /* SurfForcastWidgetApp.swift */; };
 		0ABB89B32C7C1489006DAE23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89B22C7C1489006DAE23 /* ContentView.swift */; };
 		0ABB89B52C7C148A006DAE23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABB89B42C7C148A006DAE23 /* Assets.xcassets */; };
@@ -66,7 +66,6 @@
 		0A0161F72C7D769E00437D8C /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		0A0161FA2C7D76D800437D8C /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		0A0161FD2C7D773900437D8C /* SurfSpots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfSpots.swift; sourceTree = "<group>"; };
-		0A0162002C7D777600437D8C /* ParseSurfSpotJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseSurfSpotJSON.swift; sourceTree = "<group>"; };
 		0A0162022C7D778300437D8C /* GetGradeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGradeColor.swift; sourceTree = "<group>"; };
 		0A0162052C7D77C900437D8C /* TimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineProvider.swift; sourceTree = "<group>"; };
 		0A0162072C7D77D100437D8C /* TimelineEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineEntry.swift; sourceTree = "<group>"; };
@@ -74,10 +73,9 @@
 		0A01620E2C7D78AD00437D8C /* NoSurfSpotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoSurfSpotView.swift; sourceTree = "<group>"; };
 		0A0162102C7D791000437D8C /* GetGradeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGradeColor.swift; sourceTree = "<group>"; };
 		0A0162122C7D794C00437D8C /* SurfSpots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfSpots.swift; sourceTree = "<group>"; };
-		0A0162142C7D797000437D8C /* ParseSurfSpotJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseSurfSpotJSON.swift; sourceTree = "<group>"; };
 		0A0162172C7D79C200437D8C /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
-		0A0162192C7D8AA200437D8C /* BookmarkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkManager.swift; sourceTree = "<group>"; };
-		0A01621B2C7D8CAE00437D8C /* AllowFolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowFolder.swift; sourceTree = "<group>"; };
+		0A15027E2C7DA16200339813 /* WebScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebScraper.swift; sourceTree = "<group>"; };
+		0A1502802C7DA2EA00339813 /* WebScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebScraper.swift; sourceTree = "<group>"; };
 		0ABB89AD2C7C1489006DAE23 /* surf-forcast-widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "surf-forcast-widget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ABB89B02C7C1489006DAE23 /* SurfForcastWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfForcastWidgetApp.swift; sourceTree = "<group>"; };
 		0ABB89B22C7C1489006DAE23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1502832C7DA52700339813 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +107,7 @@
 			files = (
 				0ABB89C82C7C150B006DAE23 /* SwiftUI.framework in Frameworks */,
 				0ABB89C62C7C150B006DAE23 /* WidgetKit.framework in Frameworks */,
+				0A15027D2C7D9D1E00339813 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,10 +144,8 @@
 		0A0161FF2C7D775E00437D8C /* Functions */ = {
 			isa = PBXGroup;
 			children = (
-				0A0162002C7D777600437D8C /* ParseSurfSpotJSON.swift */,
 				0A0162022C7D778300437D8C /* GetGradeColor.swift */,
-				0A0162192C7D8AA200437D8C /* BookmarkManager.swift */,
-				0A01621B2C7D8CAE00437D8C /* AllowFolder.swift */,
+				0A15027E2C7DA16200339813 /* WebScraper.swift */,
 			);
 			path = Functions;
 			sourceTree = "<group>";
@@ -165,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				0A0162102C7D791000437D8C /* GetGradeColor.swift */,
-				0A0162142C7D797000437D8C /* ParseSurfSpotJSON.swift */,
+				0A1502802C7DA2EA00339813 /* WebScraper.swift */,
 			);
 			path = Functions;
 			sourceTree = "<group>";
@@ -281,6 +279,9 @@
 				0ABB89D52C7C150B006DAE23 /* PBXTargetDependency */,
 			);
 			name = "surf-forcast-widget";
+			packageProductDependencies = (
+				0A1502822C7DA52700339813 /* SwiftSoup */,
+			);
 			productName = "surf-forcast-widget";
 			productReference = 0ABB89AD2C7C1489006DAE23 /* surf-forcast-widget.app */;
 			productType = "com.apple.product-type.application";
@@ -298,6 +299,9 @@
 			dependencies = (
 			);
 			name = "macOs-widgetExtension";
+			packageProductDependencies = (
+				0A15027C2C7D9D1E00339813 /* SwiftSoup */,
+			);
 			productName = "macOs-widgetExtension";
 			productReference = 0ABB89C32C7C150B006DAE23 /* macOs-widgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -329,6 +333,9 @@
 				Base,
 			);
 			mainGroup = 0ABB89A42C7C1489006DAE23;
+			packageReferences = (
+				0AA4A34F2C7D99CF006D8D83 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = 0ABB89AE2C7C1489006DAE23 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -366,10 +373,9 @@
 			files = (
 				0A0162112C7D791000437D8C /* GetGradeColor.swift in Sources */,
 				0ABB89B32C7C1489006DAE23 /* ContentView.swift in Sources */,
-				0A0162152C7D797000437D8C /* ParseSurfSpotJSON.swift in Sources */,
+				0A1502812C7DA2EA00339813 /* WebScraper.swift in Sources */,
 				0A0162182C7D79C200437D8C /* ColorExtension.swift in Sources */,
 				0A01620D2C7D78A200437D8C /* SurfSpotView.swift in Sources */,
-				0A01621A2C7D8AA200437D8C /* BookmarkManager.swift in Sources */,
 				0A0162132C7D794C00437D8C /* SurfSpots.swift in Sources */,
 				0ABB89B12C7C1489006DAE23 /* SurfForcastWidgetApp.swift in Sources */,
 				0A01620F2C7D78AD00437D8C /* NoSurfSpotView.swift in Sources */,
@@ -386,12 +392,11 @@
 				0A0161FB2C7D76D800437D8C /* ColorExtension.swift in Sources */,
 				0A0161FE2C7D773900437D8C /* SurfSpots.swift in Sources */,
 				0A0162082C7D77D100437D8C /* TimelineEntry.swift in Sources */,
-				0A0162012C7D777600437D8C /* ParseSurfSpotJSON.swift in Sources */,
-				0A01621C2C7D8CAE00437D8C /* AllowFolder.swift in Sources */,
 				0A0162032C7D778300437D8C /* GetGradeColor.swift in Sources */,
 				0A0161F42C7D75EE00437D8C /* SurfSpotView.swift in Sources */,
 				0ABB89CD2C7C150B006DAE23 /* MacOsWidget.swift in Sources */,
 				0A0162062C7D77C900437D8C /* TimelineProvider.swift in Sources */,
+				0A15027F2C7DA16200339813 /* WebScraper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +589,7 @@
 				CODE_SIGN_ENTITLEMENTS = "macOs-widget/macOs_widget.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOs-widget/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "macOs-widget";
@@ -611,6 +617,7 @@
 				CODE_SIGN_ENTITLEMENTS = "macOs-widget/macOs_widget.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOs-widget/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "macOs-widget";
@@ -661,6 +668,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0AA4A34F2C7D99CF006D8D83 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A15027C2C7D9D1E00339813 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0AA4A34F2C7D99CF006D8D83 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		0A1502822C7DA52700339813 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0AA4A34F2C7D99CF006D8D83 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0ABB89A52C7C1489006DAE23 /* Project object */;
 }

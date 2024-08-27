@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    let surf: SurfSpots?
+    let spots: [Spot]?
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10.0) {
-            if ((surf?.surfSpots) != nil) {
-                ForEach(surf!.surfSpots, id: \.self.name) { spot in
+            if ((spots) != nil) {
+                ForEach(spots!, id: \.self.name) { spot in
                     SurfSpotView(spotInfo: spot)
                 }
             } else {
@@ -21,12 +21,5 @@ struct ContentView: View {
             }
         }
         .padding(.all, 10.0)
-    }
-}
-
-#Preview {
-    ZStack {
-        let surf = ParseSurfSpotJSON()
-        ContentView(surf: surf)
     }
 }

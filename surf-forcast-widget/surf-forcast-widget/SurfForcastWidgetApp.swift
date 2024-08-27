@@ -9,11 +9,11 @@ import SwiftUI
 
 @main
 struct SurfForcastWidgetApp: App {
-    let surf = ParseSurfSpotJSON()
+    let spots = SurflineWebScraper()
  
     var body: some Scene {
         WindowGroup {
-            ContentView(surf: surf)
+            ContentView(spots: spots)
         }
     }
 }

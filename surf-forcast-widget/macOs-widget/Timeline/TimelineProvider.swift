@@ -23,23 +23,20 @@ struct ForcastProvider: TimelineProvider {
     )
     
     func placeholder(in context: Context) -> ForcastEntry {
-        print("PLACEHOLDER")
         return placeholderEntry
     }
     
     func getSnapshot(in context: Context, completion: @escaping (ForcastEntry) -> ()) {
-        print("SNAPSHOT")
         completion(placeholderEntry)
     }
     
     func getTimeline(in context: Context, completion: @escaping (Timeline<ForcastEntry>) -> Void) {
-        print("TIMELINE")
         let currentDate = Date()
         var entries: [ForcastEntry] = []
         
         for hourOffset in 0 ..< 6 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let spots = ParseSurfSpotJSON()!.surfSpots
+            let spots = SurflineWebScraper()!
             print("spots: \(spots)")
             let entry = ForcastEntry(date: entryDate, spots: spots)
             entries.append(entry)
