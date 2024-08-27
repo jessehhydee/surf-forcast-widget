@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0161F42C7D75EE00437D8C /* SurfSpotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0161F32C7D75EE00437D8C /* SurfSpotView.swift */; };
+		0A0161F62C7D764E00437D8C /* NoSurfSpotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0161F52C7D764E00437D8C /* NoSurfSpotView.swift */; };
+		0A0161F82C7D769E00437D8C /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0161F72C7D769E00437D8C /* EntryView.swift */; };
+		0A0161FB2C7D76D800437D8C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0161FA2C7D76D800437D8C /* ColorExtension.swift */; };
+		0A0161FE2C7D773900437D8C /* SurfSpots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0161FD2C7D773900437D8C /* SurfSpots.swift */; };
+		0A0162012C7D777600437D8C /* ParseSurfSpotJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162002C7D777600437D8C /* ParseSurfSpotJSON.swift */; };
+		0A0162032C7D778300437D8C /* GetGradeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162022C7D778300437D8C /* GetGradeColor.swift */; };
+		0A0162062C7D77C900437D8C /* TimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162052C7D77C900437D8C /* TimelineProvider.swift */; };
+		0A0162082C7D77D100437D8C /* TimelineEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162072C7D77D100437D8C /* TimelineEntry.swift */; };
+		0A01620D2C7D78A200437D8C /* SurfSpotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01620C2C7D78A200437D8C /* SurfSpotView.swift */; };
+		0A01620F2C7D78AD00437D8C /* NoSurfSpotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01620E2C7D78AD00437D8C /* NoSurfSpotView.swift */; };
+		0A0162112C7D791000437D8C /* GetGradeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162102C7D791000437D8C /* GetGradeColor.swift */; };
+		0A0162132C7D794C00437D8C /* SurfSpots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162122C7D794C00437D8C /* SurfSpots.swift */; };
+		0A0162152C7D797000437D8C /* ParseSurfSpotJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162142C7D797000437D8C /* ParseSurfSpotJSON.swift */; };
+		0A0162182C7D79C200437D8C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162172C7D79C200437D8C /* ColorExtension.swift */; };
 		0ABB89B12C7C1489006DAE23 /* SurfForcastWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89B02C7C1489006DAE23 /* SurfForcastWidgetApp.swift */; };
 		0ABB89B32C7C1489006DAE23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89B22C7C1489006DAE23 /* ContentView.swift */; };
 		0ABB89B52C7C148A006DAE23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABB89B42C7C148A006DAE23 /* Assets.xcassets */; };
@@ -17,7 +32,6 @@
 		0ABB89CD2C7C150B006DAE23 /* MacOsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89CC2C7C150B006DAE23 /* MacOsWidget.swift */; };
 		0ABB89D12C7C150B006DAE23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABB89D02C7C150B006DAE23 /* Assets.xcassets */; };
 		0ABB89D62C7C150B006DAE23 /* macOs-widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0ABB89C32C7C150B006DAE23 /* macOs-widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		0ABB89DE2C7C59AE006DAE23 /* SurfSpotElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89DD2C7C59AE006DAE23 /* SurfSpotElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +59,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A0161F32C7D75EE00437D8C /* SurfSpotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfSpotView.swift; sourceTree = "<group>"; };
+		0A0161F52C7D764E00437D8C /* NoSurfSpotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoSurfSpotView.swift; sourceTree = "<group>"; };
+		0A0161F72C7D769E00437D8C /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		0A0161FA2C7D76D800437D8C /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		0A0161FD2C7D773900437D8C /* SurfSpots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfSpots.swift; sourceTree = "<group>"; };
+		0A0162002C7D777600437D8C /* ParseSurfSpotJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseSurfSpotJSON.swift; sourceTree = "<group>"; };
+		0A0162022C7D778300437D8C /* GetGradeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGradeColor.swift; sourceTree = "<group>"; };
+		0A0162052C7D77C900437D8C /* TimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineProvider.swift; sourceTree = "<group>"; };
+		0A0162072C7D77D100437D8C /* TimelineEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineEntry.swift; sourceTree = "<group>"; };
+		0A01620C2C7D78A200437D8C /* SurfSpotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfSpotView.swift; sourceTree = "<group>"; };
+		0A01620E2C7D78AD00437D8C /* NoSurfSpotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoSurfSpotView.swift; sourceTree = "<group>"; };
+		0A0162102C7D791000437D8C /* GetGradeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGradeColor.swift; sourceTree = "<group>"; };
+		0A0162122C7D794C00437D8C /* SurfSpots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfSpots.swift; sourceTree = "<group>"; };
+		0A0162142C7D797000437D8C /* ParseSurfSpotJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseSurfSpotJSON.swift; sourceTree = "<group>"; };
+		0A0162172C7D79C200437D8C /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		0ABB89AD2C7C1489006DAE23 /* surf-forcast-widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "surf-forcast-widget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ABB89B02C7C1489006DAE23 /* SurfForcastWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfForcastWidgetApp.swift; sourceTree = "<group>"; };
 		0ABB89B22C7C1489006DAE23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,7 +88,6 @@
 		0ABB89D02C7C150B006DAE23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0ABB89D22C7C150B006DAE23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ABB89D32C7C150B006DAE23 /* macOs_widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOs_widget.entitlements; sourceTree = "<group>"; };
-		0ABB89DD2C7C59AE006DAE23 /* SurfSpotElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfSpotElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +110,87 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A0161F22C7D75C500437D8C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A0161F92C7D76C200437D8C /* Extensions */,
+				0A0161F32C7D75EE00437D8C /* SurfSpotView.swift */,
+				0A0161F52C7D764E00437D8C /* NoSurfSpotView.swift */,
+				0A0161F72C7D769E00437D8C /* EntryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A0161F92C7D76C200437D8C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0A0161FA2C7D76D800437D8C /* ColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0A0161FC2C7D771500437D8C /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				0A0161FD2C7D773900437D8C /* SurfSpots.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		0A0161FF2C7D775E00437D8C /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				0A0162002C7D777600437D8C /* ParseSurfSpotJSON.swift */,
+				0A0162022C7D778300437D8C /* GetGradeColor.swift */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
+		0A0162042C7D77B800437D8C /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				0A0162052C7D77C900437D8C /* TimelineProvider.swift */,
+				0A0162072C7D77D100437D8C /* TimelineEntry.swift */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		0A0162092C7D787A00437D8C /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				0A0162102C7D791000437D8C /* GetGradeColor.swift */,
+				0A0162142C7D797000437D8C /* ParseSurfSpotJSON.swift */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
+		0A01620A2C7D788000437D8C /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				0A0162122C7D794C00437D8C /* SurfSpots.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		0A01620B2C7D788700437D8C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A0162162C7D799500437D8C /* Extensions */,
+				0ABB89B22C7C1489006DAE23 /* ContentView.swift */,
+				0A01620C2C7D78A200437D8C /* SurfSpotView.swift */,
+				0A01620E2C7D78AD00437D8C /* NoSurfSpotView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A0162162C7D799500437D8C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0A0162172C7D79C200437D8C /* ColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		0ABB89A42C7C1489006DAE23 = {
 			isa = PBXGroup;
 			children = (
@@ -104,12 +213,13 @@
 		0ABB89AF2C7C1489006DAE23 /* surf-forcast-widget */ = {
 			isa = PBXGroup;
 			children = (
+				0A01620B2C7D788700437D8C /* Views */,
+				0A01620A2C7D788000437D8C /* Types */,
+				0A0162092C7D787A00437D8C /* Functions */,
 				0ABB89B02C7C1489006DAE23 /* SurfForcastWidgetApp.swift */,
-				0ABB89B22C7C1489006DAE23 /* ContentView.swift */,
 				0ABB89B42C7C148A006DAE23 /* Assets.xcassets */,
 				0ABB89B92C7C148A006DAE23 /* surf_forcast_widget.entitlements */,
 				0ABB89B62C7C148A006DAE23 /* Preview Content */,
-				0ABB89DD2C7C59AE006DAE23 /* SurfSpotElement.swift */,
 			);
 			path = "surf-forcast-widget";
 			sourceTree = "<group>";
@@ -134,6 +244,10 @@
 		0ABB89C92C7C150B006DAE23 /* macOs-widget */ = {
 			isa = PBXGroup;
 			children = (
+				0A0162042C7D77B800437D8C /* Timeline */,
+				0A0161FF2C7D775E00437D8C /* Functions */,
+				0A0161FC2C7D771500437D8C /* Types */,
+				0A0161F22C7D75C500437D8C /* Views */,
 				0ABB89CA2C7C150B006DAE23 /* MacOsWidgetBundle.swift */,
 				0ABB89CC2C7C150B006DAE23 /* MacOsWidget.swift */,
 				0ABB89D02C7C150B006DAE23 /* Assets.xcassets */,
@@ -244,9 +358,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ABB89DE2C7C59AE006DAE23 /* SurfSpotElement.swift in Sources */,
+				0A0162112C7D791000437D8C /* GetGradeColor.swift in Sources */,
 				0ABB89B32C7C1489006DAE23 /* ContentView.swift in Sources */,
+				0A0162152C7D797000437D8C /* ParseSurfSpotJSON.swift in Sources */,
+				0A0162182C7D79C200437D8C /* ColorExtension.swift in Sources */,
+				0A01620D2C7D78A200437D8C /* SurfSpotView.swift in Sources */,
+				0A0162132C7D794C00437D8C /* SurfSpots.swift in Sources */,
 				0ABB89B12C7C1489006DAE23 /* SurfForcastWidgetApp.swift in Sources */,
+				0A01620F2C7D78AD00437D8C /* NoSurfSpotView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +374,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ABB89CB2C7C150B006DAE23 /* MacOsWidgetBundle.swift in Sources */,
+				0A0161F62C7D764E00437D8C /* NoSurfSpotView.swift in Sources */,
+				0A0161F82C7D769E00437D8C /* EntryView.swift in Sources */,
+				0A0161FB2C7D76D800437D8C /* ColorExtension.swift in Sources */,
+				0A0161FE2C7D773900437D8C /* SurfSpots.swift in Sources */,
+				0A0162082C7D77D100437D8C /* TimelineEntry.swift in Sources */,
+				0A0162012C7D777600437D8C /* ParseSurfSpotJSON.swift in Sources */,
+				0A0162032C7D778300437D8C /* GetGradeColor.swift in Sources */,
+				0A0161F42C7D75EE00437D8C /* SurfSpotView.swift in Sources */,
 				0ABB89CD2C7C150B006DAE23 /* MacOsWidget.swift in Sources */,
+				0A0162062C7D77C900437D8C /* TimelineProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
