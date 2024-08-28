@@ -11,13 +11,24 @@ struct ContentView: View {
     let spots: [Spot]?
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 10.0) {
-            if ((spots) != nil) {
-                ForEach(spots!, id: \.self.name) { spot in
-                    SurfSpotView(spotInfo: spot)
+        HStack(alignment: .top, spacing: 7.0) {
+            VStack(alignment: .leading, spacing: 7.0) {
+                if (spots != nil && spots!.count > 0) {
+                    ForEach(spots!.prefix(3), id: \.self.name) { spot in
+                        SurfSpotView(spotInfo: spot)
+                    }
+                } else {
+                    NoSurfSpotView()
                 }
-            } else {
-                NoSurfSpotView()
+            }
+            .frame(minWidth: 340, maxWidth: 600)
+            if (spots != nil && spots!.count > 3) {
+                VStack(alignment: .leading, spacing: 7.0) {
+                    ForEach(Array(spots!.dropFirst(3)), id: \.self.name) { spot in
+                        SurfSpotView(spotInfo: spot)
+                    }
+                }
+                .frame(minWidth: 340, maxWidth: 600)
             }
         }
         .padding(.all, 10.0)

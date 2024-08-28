@@ -58,7 +58,7 @@ struct SurfSpotView: View {
         }
         .padding(.all, 10.0)
         .padding(.trailing, 20)
-        .frame(alignment: .topLeading)
+        .frame(maxWidth: .infinity, alignment: .topLeading)
         .background(Color(hex: 0xffffff, opacity: 0.8))
         .cornerRadius(10)
     }

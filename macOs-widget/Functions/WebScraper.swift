@@ -53,9 +53,6 @@ private var dummyData: [Spot] = [
 ]
 
 func SurflineWebScraper(amountOfSpotsToBeReturned: Int) -> [Spot]? {
-//    if (dummyData.count > amountOfSpotsToBeReturned) {
-//        dummyData.removeSubrange(amountOfSpotsToBeReturned..<dummyData.count)
-//    }
     return dummyData;
         
     var spotUrls = [

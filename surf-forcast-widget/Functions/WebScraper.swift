@@ -33,7 +33,23 @@ private let dummyData: [Spot] = [
         windDir: "Onshore wind",
         windSpeed: "5",
         grade: "POOR TO FAIR"
-    )
+    ),
+    Spot(
+        name: "Taylors Mistake Two Example",
+        sizeHumanReadable: "Waist to chest",
+        sizeFt: "1-2",
+        windDir: "Cross-onshore wind",
+        windSpeed: "19",
+        grade: "POOR"
+    ),
+    Spot(
+        name: "Taylors Mistake Two",
+        sizeHumanReadable: "Waist to chest",
+        sizeFt: "1-2",
+        windDir: "Cross-onshore wind",
+        windSpeed: "19",
+        grade: "POOR"
+    ),
 ]
 
 func SurflineWebScraper() -> [Spot]? {
