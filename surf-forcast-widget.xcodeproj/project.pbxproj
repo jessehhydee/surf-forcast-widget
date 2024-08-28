@@ -24,6 +24,7 @@
 		0A1502812C7DA2EA00339813 /* WebScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1502802C7DA2EA00339813 /* WebScraper.swift */; };
 		0A62382E2C7ECBB2003B1679 /* SystemLargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62382D2C7ECBB2003B1679 /* SystemLargeView.swift */; };
 		0A6238302C7ECBC0003B1679 /* SystemExtraLargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62382F2C7ECBC0003B1679 /* SystemExtraLargeView.swift */; };
+		0A6238322C7EE5BB003B1679 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6238312C7EE5BB003B1679 /* SettingsView.swift */; };
 		0ABB89B12C7C1489006DAE23 /* SurfForcastWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89B02C7C1489006DAE23 /* SurfForcastWidgetApp.swift */; };
 		0ABB89B32C7C1489006DAE23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89B22C7C1489006DAE23 /* ContentView.swift */; };
 		0ABB89B52C7C148A006DAE23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABB89B42C7C148A006DAE23 /* Assets.xcassets */; };
@@ -80,6 +81,7 @@
 		0A1502802C7DA2EA00339813 /* WebScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebScraper.swift; sourceTree = "<group>"; };
 		0A62382D2C7ECBB2003B1679 /* SystemLargeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemLargeView.swift; sourceTree = "<group>"; };
 		0A62382F2C7ECBC0003B1679 /* SystemExtraLargeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemExtraLargeView.swift; sourceTree = "<group>"; };
+		0A6238312C7EE5BB003B1679 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0ABB89AD2C7C1489006DAE23 /* surf-forcast-widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "surf-forcast-widget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ABB89B02C7C1489006DAE23 /* SurfForcastWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfForcastWidgetApp.swift; sourceTree = "<group>"; };
 		0ABB89B22C7C1489006DAE23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				0ABB89B22C7C1489006DAE23 /* ContentView.swift */,
 				0A01620C2C7D78A200437D8C /* SurfSpotView.swift */,
 				0A01620E2C7D78AD00437D8C /* NoSurfSpotView.swift */,
+				0A6238312C7EE5BB003B1679 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				0A0162112C7D791000437D8C /* GetGradeColor.swift in Sources */,
 				0ABB89B32C7C1489006DAE23 /* ContentView.swift in Sources */,
 				0A1502812C7DA2EA00339813 /* WebScraper.swift in Sources */,
+				0A6238322C7EE5BB003B1679 /* SettingsView.swift in Sources */,
 				0A0162182C7D79C200437D8C /* ColorExtension.swift in Sources */,
 				0A01620D2C7D78A200437D8C /* SurfSpotView.swift in Sources */,
 				0A0162132C7D794C00437D8C /* SurfSpots.swift in Sources */,

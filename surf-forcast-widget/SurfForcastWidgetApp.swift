@@ -22,6 +22,10 @@ struct VisualEffectView: NSViewRepresentable {
 @main
 struct SurfForecastWidgetApp: App {
     let spots = SurflineWebScraper()
+    
+//    init() {
+//        WidgetCenter.shared.reloadAllTimelines()
+//    }
  
     var body: some Scene {
         WindowGroup {
@@ -30,5 +34,9 @@ struct SurfForecastWidgetApp: App {
             .fixedSize()
         }
         .windowResizability(.contentSize)
+        
+        Settings {
+            SettingsView()
+        }
     }
 }
