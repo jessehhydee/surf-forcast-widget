@@ -8,7 +8,37 @@
 import SwiftUI
 import SwiftSoup
 
+// For testing
+private let dummyData: [Spot] = [
+    Spot(
+        name: "Taylors Mistake",
+        sizeHumanReadable: "Waist to chest",
+        sizeFt: "1-2",
+        windDir: "Cross-onshore wind",
+        windSpeed: "19",
+        grade: "POOR"
+    ),
+    Spot(
+        name: "Sumner Bar (Christchurch)",
+        sizeHumanReadable: "Waist to chest",
+        sizeFt: "2-3",
+        windDir: "Offshore wind",
+        windSpeed: "8",
+        grade: "FAIR TO GOOD"
+    ),
+    Spot(
+        name: "New Brighton Pier",
+        sizeHumanReadable: "Waist to chest",
+        sizeFt: "1-3",
+        windDir: "Onshore wind",
+        windSpeed: "5",
+        grade: "POOR TO FAIR"
+    )
+]
+
 func SurflineWebScraper() -> [Spot]? {
+    return dummyData;
+    
     let spotUrls = [
         "https://www.surfline.com/surf-report/taylors-mistake/584204204e65fad6a770967e",
         "https://www.surfline.com/surf-report/sumner-bar-christchurch-/6178681b18da23e5802a4a10",

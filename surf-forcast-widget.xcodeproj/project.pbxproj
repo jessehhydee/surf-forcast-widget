@@ -20,10 +20,10 @@
 		0A0162112C7D791000437D8C /* GetGradeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162102C7D791000437D8C /* GetGradeColor.swift */; };
 		0A0162132C7D794C00437D8C /* SurfSpots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162122C7D794C00437D8C /* SurfSpots.swift */; };
 		0A0162182C7D79C200437D8C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162172C7D79C200437D8C /* ColorExtension.swift */; };
-		0A15027D2C7D9D1E00339813 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 0A15027C2C7D9D1E00339813 /* SwiftSoup */; };
 		0A15027F2C7DA16200339813 /* WebScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A15027E2C7DA16200339813 /* WebScraper.swift */; };
 		0A1502812C7DA2EA00339813 /* WebScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1502802C7DA2EA00339813 /* WebScraper.swift */; };
-		0A1502832C7DA52700339813 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 0A1502822C7DA52700339813 /* SwiftSoup */; };
+		0A62382E2C7ECBB2003B1679 /* SystemLargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62382D2C7ECBB2003B1679 /* SystemLargeView.swift */; };
+		0A6238302C7ECBC0003B1679 /* SystemExtraLargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62382F2C7ECBC0003B1679 /* SystemExtraLargeView.swift */; };
 		0ABB89B12C7C1489006DAE23 /* SurfForcastWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89B02C7C1489006DAE23 /* SurfForcastWidgetApp.swift */; };
 		0ABB89B32C7C1489006DAE23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89B22C7C1489006DAE23 /* ContentView.swift */; };
 		0ABB89B52C7C148A006DAE23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABB89B42C7C148A006DAE23 /* Assets.xcassets */; };
@@ -34,6 +34,8 @@
 		0ABB89CD2C7C150B006DAE23 /* MacOsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89CC2C7C150B006DAE23 /* MacOsWidget.swift */; };
 		0ABB89D12C7C150B006DAE23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABB89D02C7C150B006DAE23 /* Assets.xcassets */; };
 		0ABB89D62C7C150B006DAE23 /* macOs-widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0ABB89C32C7C150B006DAE23 /* macOs-widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0ABC9C962C7EB25300A4DB19 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 0ABC9C952C7EB25300A4DB19 /* SwiftSoup */; };
+		0ABC9C982C7EB25C00A4DB19 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 0ABC9C972C7EB25C00A4DB19 /* SwiftSoup */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		0A0162172C7D79C200437D8C /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		0A15027E2C7DA16200339813 /* WebScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebScraper.swift; sourceTree = "<group>"; };
 		0A1502802C7DA2EA00339813 /* WebScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebScraper.swift; sourceTree = "<group>"; };
+		0A62382D2C7ECBB2003B1679 /* SystemLargeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemLargeView.swift; sourceTree = "<group>"; };
+		0A62382F2C7ECBC0003B1679 /* SystemExtraLargeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemExtraLargeView.swift; sourceTree = "<group>"; };
 		0ABB89AD2C7C1489006DAE23 /* surf-forcast-widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "surf-forcast-widget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ABB89B02C7C1489006DAE23 /* SurfForcastWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfForcastWidgetApp.swift; sourceTree = "<group>"; };
 		0ABB89B22C7C1489006DAE23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A1502832C7DA52700339813 /* SwiftSoup in Frameworks */,
+				0ABC9C962C7EB25300A4DB19 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +111,7 @@
 			files = (
 				0ABB89C82C7C150B006DAE23 /* SwiftUI.framework in Frameworks */,
 				0ABB89C62C7C150B006DAE23 /* WidgetKit.framework in Frameworks */,
-				0A15027D2C7D9D1E00339813 /* SwiftSoup in Frameworks */,
+				0ABC9C982C7EB25C00A4DB19 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +125,8 @@
 				0A0161F32C7D75EE00437D8C /* SurfSpotView.swift */,
 				0A0161F52C7D764E00437D8C /* NoSurfSpotView.swift */,
 				0A0161F72C7D769E00437D8C /* EntryView.swift */,
+				0A62382D2C7ECBB2003B1679 /* SystemLargeView.swift */,
+				0A62382F2C7ECBC0003B1679 /* SystemExtraLargeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -280,7 +286,7 @@
 			);
 			name = "surf-forcast-widget";
 			packageProductDependencies = (
-				0A1502822C7DA52700339813 /* SwiftSoup */,
+				0ABC9C952C7EB25300A4DB19 /* SwiftSoup */,
 			);
 			productName = "surf-forcast-widget";
 			productReference = 0ABB89AD2C7C1489006DAE23 /* surf-forcast-widget.app */;
@@ -300,7 +306,7 @@
 			);
 			name = "macOs-widgetExtension";
 			packageProductDependencies = (
-				0A15027C2C7D9D1E00339813 /* SwiftSoup */,
+				0ABC9C972C7EB25C00A4DB19 /* SwiftSoup */,
 			);
 			productName = "macOs-widgetExtension";
 			productReference = 0ABB89C32C7C150B006DAE23 /* macOs-widgetExtension.appex */;
@@ -388,6 +394,7 @@
 			files = (
 				0ABB89CB2C7C150B006DAE23 /* MacOsWidgetBundle.swift in Sources */,
 				0A0161F62C7D764E00437D8C /* NoSurfSpotView.swift in Sources */,
+				0A6238302C7ECBC0003B1679 /* SystemExtraLargeView.swift in Sources */,
 				0A0161F82C7D769E00437D8C /* EntryView.swift in Sources */,
 				0A0161FB2C7D76D800437D8C /* ColorExtension.swift in Sources */,
 				0A0161FE2C7D773900437D8C /* SurfSpots.swift in Sources */,
@@ -397,6 +404,7 @@
 				0ABB89CD2C7C150B006DAE23 /* MacOsWidget.swift in Sources */,
 				0A0162062C7D77C900437D8C /* TimelineProvider.swift in Sources */,
 				0A15027F2C7DA16200339813 /* WebScraper.swift in Sources */,
+				0A62382E2C7ECBB2003B1679 /* SystemLargeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,12 +689,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0A15027C2C7D9D1E00339813 /* SwiftSoup */ = {
+		0ABC9C952C7EB25300A4DB19 /* SwiftSoup */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0AA4A34F2C7D99CF006D8D83 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
 			productName = SwiftSoup;
 		};
-		0A1502822C7DA52700339813 /* SwiftSoup */ = {
+		0ABC9C972C7EB25C00A4DB19 /* SwiftSoup */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0AA4A34F2C7D99CF006D8D83 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
 			productName = SwiftSoup;

@@ -17,14 +17,14 @@ struct MacOsWidget: Widget {
             provider: ForecastProvider()
         ) { entry in
             WidgetEntryView(entry: entry)
-//                .containerBackground(.fill.tertiary, for: .widget)
+            .containerBackground(for: .widget) {
+                Image(.metallicToad)
+                .resizable()
+                .scaledToFill()
+            }
         }
         .configurationDisplayName("Surf Forecast")
         .description("Displays your local surf spots forecast")
-//        .supportedFamilies([.systemLarge])
-        .supportedFamilies([
-            .systemMedium,
-            .systemLarge
-        ])
+        .supportedFamilies([.systemLarge, .systemExtraLarge])
     }
 }

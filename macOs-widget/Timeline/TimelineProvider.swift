@@ -33,11 +33,19 @@ struct ForecastProvider: TimelineProvider {
     func getTimeline(in context: Context, completion: @escaping (Timeline<ForecastEntry>) -> Void) {
         let currentDate = Date()
         var entries: [ForecastEntry] = []
+        let amountOfSpotsAllowed: Int = switch context.family {
+        case .systemLarge:
+            3
+        case .systemExtraLarge:
+            6
+        default:
+            3
+        }
         
         for hourOffset in 0 ..< 6 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let spots = SurflineWebScraper()!
-            print("spots: \(spots)")
+            let spots = SurflineWebScraper(amountOfSpotsToBeReturned: amountOfSpotsAllowed)!
+            print(spots)
             let entry = ForecastEntry(date: entryDate, spots: spots)
             entries.append(entry)
         }

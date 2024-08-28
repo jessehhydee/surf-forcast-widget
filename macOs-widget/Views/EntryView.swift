@@ -8,18 +8,25 @@
 import SwiftUI
 
 struct WidgetEntryView : View {
+    @Environment(\.widgetFamily) var widgetFamily
     var entry: ForecastProvider.Entry
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 10.0) {
-            if (entry.spots.count > 0) {
-                ForEach(entry.spots, id: \.self.name) { spot in
-                    SurfSpotView(spotInfo: spot)
-                }
-            } else {
-                NoSurfSpotView()
+        VStack() {
+            switch widgetFamily {
+                case .systemLarge:
+                    SystemLargeView(entry: entry)
+                case .systemExtraLarge:
+                    SystemExtraLargeView(entry: entry)
+                default:
+                    SystemLargeView(entry: entry)
+            }
+            HStack{
+                Spacer()
+                Text("**Last Update:** \(entry.date.formatted(.dateTime))")
+                .font(.caption2)
             }
         }
-        .padding(.all, 10.0)
+        .padding(.all, 2.0)
     }
 }

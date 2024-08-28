@@ -18,7 +18,7 @@ struct SurfSpotView: View {
             HStack(alignment: .top) {
                 Capsule()
                     .fill(Color(hex: GetGradeColor(grade: spotInfo.grade)))
-                    .frame(maxWidth: 5, maxHeight: 55)
+                    .frame(maxWidth: 5, maxHeight: 48)
                 HStack(alignment: .top, spacing: 50.0) {
                     VStack(alignment: .leading) {
                         Text(spotInfo.sizeHumanReadable)
@@ -58,7 +58,7 @@ struct SurfSpotView: View {
         }
         .padding(.all, 10.0)
         .padding(.trailing, 20)
-        .frame(alignment: .topLeading)
+        .frame(maxWidth: .infinity, alignment: .topLeading)
         .background(Color(hex: 0xffffff, opacity: 0.8))
         .cornerRadius(10)
     }
