@@ -12,12 +12,28 @@ struct ForecastProvider: TimelineProvider {
         date: Date(),
         spots: [
             Spot(
-                name: "Taylors Mistake",
-                sizeHumanReadable: "Waist to chest",
-                sizeFt: "1-3",
+                name: "Otaki Beach",
+                sizeHumanReadable: "Overhead to well overhead",
+                sizeFt: "3-4",
+                windDir: "Onshore wind",
+                windSpeed: "26",
+                grade: "VERY POOR"
+            ),
+            Spot(
+                name: "New Brighton Pier",
+                sizeHumanReadable: "Thigh to Waist",
+                sizeFt: "1-2",
                 windDir: "Offshore wind",
                 windSpeed: "8",
-                grade: "Fair"
+                grade: "POOR TO FAIR"
+            ),
+            Spot(
+                name: "Stent Road",
+                sizeHumanReadable: "2x overhead",
+                sizeFt: "4-6",
+                windDir: "Offshore wind",
+                windSpeed: "3",
+                grade: "GOOD"
             )
         ]
     )
@@ -27,12 +43,21 @@ struct ForecastProvider: TimelineProvider {
     }
     
     func getSnapshot(in context: Context, completion: @escaping (ForecastEntry) -> ()) {
-        completion(placeholderEntry)
+        Task {
+            let entry = await getTimelineEntry(context: context, date: .now)
+            completion(entry)
+        }
     }
     
     func getTimeline(in context: Context, completion: @escaping (Timeline<ForecastEntry>) -> Void) {
-        let currentDate = Date()
-        var entries: [ForecastEntry] = []
+        Task {
+            let entry = await getTimelineEntry(context: context, date: .now)
+            let timeline = Timeline(entries: [entry], policy: .after(.now.advanced(by: 10800))) // 3 hrs
+            completion(timeline)
+        }
+    }
+    
+    func getTimelineEntry(context: Context, date: Date) async -> ForecastEntry {
         let amountOfSpotsAllowed: Int = switch context.family {
         case .systemLarge:
             3
@@ -42,15 +67,8 @@ struct ForecastProvider: TimelineProvider {
             3
         }
         
-        for hourOffset in 0 ..< 6 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let spotUrls = GetSurfSpotUrls()
-            let spots = SurflineWebScraper(spotUrls: spotUrls, amountOfSpotsToBeReturned: amountOfSpotsAllowed)!
-            let entry = ForecastEntry(date: entryDate, spots: spots)
-            entries.append(entry)
-        }
-        
-        let timeline = Timeline(entries: entries, policy: .atEnd)
-        completion(timeline)
+        let spotUrls = GetSurfSpotUrls()
+        let spots = await SurflineWebScraper(spotUrls: spotUrls, amountOfSpotsToBeReturned: amountOfSpotsAllowed)!
+        return ForecastEntry(date: date, spots: spots)
     }
 }

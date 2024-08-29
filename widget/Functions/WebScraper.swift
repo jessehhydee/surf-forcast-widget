@@ -28,7 +28,7 @@ private var dummyData: [Spot] = [
     ),
     Spot(
         name: "New Brighton Pier",
-        sizeHumanReadable: "Waist to chest",
+        sizeHumanReadable: "Head to 2ft Overhead",
         sizeFt: "1-3",
         windDir: "Onshore wind",
         windSpeed: "5",
@@ -44,7 +44,7 @@ private var dummyData: [Spot] = [
     ),
     Spot(
         name: "Taylors Mistake Two",
-        sizeHumanReadable: "Waist to chest",
+        sizeHumanReadable: "Head to 2ft Overhead",
         sizeFt: "1-2",
         windDir: "Cross-onshore wind",
         windSpeed: "19",
@@ -52,9 +52,25 @@ private var dummyData: [Spot] = [
     ),
 ]
 
-func SurflineWebScraper(spotUrls: [String], amountOfSpotsToBeReturned: Int) -> [Spot]? {
+private func FetchFromURL(_ url: String) async -> String {
+    do {
+        let (theStringAsData, _) = try await URLSession.shared.data(from: URL(string: url)!)
+        if let returnableString = String(data: theStringAsData, encoding: .utf8)
+        {
+            return returnableString
+        } else {
+            return ""
+        }
+    }
+    catch {
+        print("Error: \(error)")
+    }
+    
+    return ""
+}
+
+func SurflineWebScraper(spotUrls: [String], amountOfSpotsToBeReturned: Int) async -> [Spot]? {
 //    return dummyData;
-        
     var spotUrls = spotUrls
     if (spotUrls.count > amountOfSpotsToBeReturned) {
         spotUrls.removeSubrange(amountOfSpotsToBeReturned..<spotUrls.count)
@@ -62,10 +78,8 @@ func SurflineWebScraper(spotUrls: [String], amountOfSpotsToBeReturned: Int) -> [
     var surfSpots: [Spot] = []
     
     for spotUrl in spotUrls {
-        let response = URL(string: spotUrl)!
-        
+        let html = await FetchFromURL(spotUrl)
         do {
-            let html = try String(contentsOf: response)
             let document = try SwiftSoup.parse(html)
             
             surfSpots.append(

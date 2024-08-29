@@ -29,7 +29,7 @@ private let dummyData: [Spot] = [
     ),
     Spot(
         name: "New Brighton Pier",
-        sizeHumanReadable: "Waist to chest",
+        sizeHumanReadable: "Head to 2ft Overhead",
         sizeFt: "1-3",
         windDir: "Onshore wind",
         windSpeed: "5",

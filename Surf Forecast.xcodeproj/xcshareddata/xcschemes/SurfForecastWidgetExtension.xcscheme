@@ -17,8 +17,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0ABB89C22C7C150B006DAE23"
-               BuildableName = "widgetExtension.appex"
-               BlueprintName = "widgetExtension"
+               BuildableName = "SurfForecastWidgetExtension.appex"
+               BlueprintName = "SurfForecastWidgetExtension"
                ReferencedContainer = "container:Surf Forecast.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -64,8 +64,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0ABB89C22C7C150B006DAE23"
-            BuildableName = "widgetExtension.appex"
-            BlueprintName = "widgetExtension"
+            BuildableName = "SurfForecastWidgetExtension.appex"
+            BlueprintName = "SurfForecastWidgetExtension"
             ReferencedContainer = "container:Surf Forecast.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
