@@ -34,10 +34,10 @@
 		0ABB89B82C7C148A006DAE23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABB89B72C7C148A006DAE23 /* Preview Assets.xcassets */; };
 		0ABB89C62C7C150B006DAE23 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABB89C52C7C150B006DAE23 /* WidgetKit.framework */; };
 		0ABB89C82C7C150B006DAE23 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABB89C72C7C150B006DAE23 /* SwiftUI.framework */; };
-		0ABB89CB2C7C150B006DAE23 /* MacOsWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89CA2C7C150B006DAE23 /* MacOsWidgetBundle.swift */; };
-		0ABB89CD2C7C150B006DAE23 /* MacOsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89CC2C7C150B006DAE23 /* MacOsWidget.swift */; };
+		0ABB89CB2C7C150B006DAE23 /* WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89CA2C7C150B006DAE23 /* WidgetBundle.swift */; };
+		0ABB89CD2C7C150B006DAE23 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB89CC2C7C150B006DAE23 /* Widget.swift */; };
 		0ABB89D12C7C150B006DAE23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABB89D02C7C150B006DAE23 /* Assets.xcassets */; };
-		0ABB89D62C7C150B006DAE23 /* macOs-widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0ABB89C32C7C150B006DAE23 /* macOs-widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0ABB89D62C7C150B006DAE23 /* widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0ABB89C32C7C150B006DAE23 /* widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0ABC9C962C7EB25300A4DB19 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 0ABC9C952C7EB25300A4DB19 /* SwiftSoup */; };
 		0ABC9C982C7EB25C00A4DB19 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 0ABC9C972C7EB25C00A4DB19 /* SwiftSoup */; };
 /* End PBXBuildFile section */
@@ -48,7 +48,7 @@
 			containerPortal = 0ABB89A52C7C1489006DAE23 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0ABB89C22C7C150B006DAE23;
-			remoteInfo = "macOs-widgetExtension";
+			remoteInfo = widgetExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -59,7 +59,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				0ABB89D62C7C150B006DAE23 /* macOs-widgetExtension.appex in Embed Foundation Extensions */,
+				0ABB89D62C7C150B006DAE23 /* widgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,14 +94,14 @@
 		0ABB89B42C7C148A006DAE23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0ABB89B72C7C148A006DAE23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0ABB89B92C7C148A006DAE23 /* surf_forecast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = surf_forecast.entitlements; sourceTree = "<group>"; };
-		0ABB89C32C7C150B006DAE23 /* macOs-widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "macOs-widgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ABB89C32C7C150B006DAE23 /* widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ABB89C52C7C150B006DAE23 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		0ABB89C72C7C150B006DAE23 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		0ABB89CA2C7C150B006DAE23 /* MacOsWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOsWidgetBundle.swift; sourceTree = "<group>"; };
-		0ABB89CC2C7C150B006DAE23 /* MacOsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOsWidget.swift; sourceTree = "<group>"; };
+		0ABB89CA2C7C150B006DAE23 /* WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBundle.swift; sourceTree = "<group>"; };
+		0ABB89CC2C7C150B006DAE23 /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
 		0ABB89D02C7C150B006DAE23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0ABB89D22C7C150B006DAE23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0ABB89D32C7C150B006DAE23 /* macOs_widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOs_widget.entitlements; sourceTree = "<group>"; };
+		0ABB89D32C7C150B006DAE23 /* widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = widget.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,7 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				0ABB89AF2C7C1489006DAE23 /* surf-forecast */,
-				0ABB89C92C7C150B006DAE23 /* macOs-widget */,
+				0ABB89C92C7C150B006DAE23 /* widget */,
 				0ABB89C42C7C150B006DAE23 /* Frameworks */,
 				0ABB89AE2C7C1489006DAE23 /* Products */,
 			);
@@ -234,7 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				0ABB89AD2C7C1489006DAE23 /* surf-forecast.app */,
-				0ABB89C32C7C150B006DAE23 /* macOs-widgetExtension.appex */,
+				0ABB89C32C7C150B006DAE23 /* widgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -271,20 +271,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0ABB89C92C7C150B006DAE23 /* macOs-widget */ = {
+		0ABB89C92C7C150B006DAE23 /* widget */ = {
 			isa = PBXGroup;
 			children = (
 				0A0162042C7D77B800437D8C /* Timeline */,
 				0A0161FF2C7D775E00437D8C /* Functions */,
 				0A0161FC2C7D771500437D8C /* Types */,
 				0A0161F22C7D75C500437D8C /* Views */,
-				0ABB89CA2C7C150B006DAE23 /* MacOsWidgetBundle.swift */,
-				0ABB89CC2C7C150B006DAE23 /* MacOsWidget.swift */,
+				0ABB89CA2C7C150B006DAE23 /* WidgetBundle.swift */,
+				0ABB89CC2C7C150B006DAE23 /* Widget.swift */,
 				0ABB89D02C7C150B006DAE23 /* Assets.xcassets */,
 				0ABB89D22C7C150B006DAE23 /* Info.plist */,
-				0ABB89D32C7C150B006DAE23 /* macOs_widget.entitlements */,
+				0ABB89D32C7C150B006DAE23 /* widget.entitlements */,
 			);
-			path = "macOs-widget";
+			path = widget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,9 +312,9 @@
 			productReference = 0ABB89AD2C7C1489006DAE23 /* surf-forecast.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0ABB89C22C7C150B006DAE23 /* macOs-widgetExtension */ = {
+		0ABB89C22C7C150B006DAE23 /* widgetExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0ABB89D72C7C150B006DAE23 /* Build configuration list for PBXNativeTarget "macOs-widgetExtension" */;
+			buildConfigurationList = 0ABB89D72C7C150B006DAE23 /* Build configuration list for PBXNativeTarget "widgetExtension" */;
 			buildPhases = (
 				0ABB89BF2C7C150B006DAE23 /* Sources */,
 				0ABB89C02C7C150B006DAE23 /* Frameworks */,
@@ -324,12 +324,12 @@
 			);
 			dependencies = (
 			);
-			name = "macOs-widgetExtension";
+			name = widgetExtension;
 			packageProductDependencies = (
 				0ABC9C972C7EB25C00A4DB19 /* SwiftSoup */,
 			);
-			productName = "macOs-widgetExtension";
-			productReference = 0ABB89C32C7C150B006DAE23 /* macOs-widgetExtension.appex */;
+			productName = widgetExtension;
+			productReference = 0ABB89C32C7C150B006DAE23 /* widgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -367,7 +367,7 @@
 			projectRoot = "";
 			targets = (
 				0ABB89AC2C7C1489006DAE23 /* surf-forecast */,
-				0ABB89C22C7C150B006DAE23 /* macOs-widgetExtension */,
+				0ABB89C22C7C150B006DAE23 /* widgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -415,7 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ABB89CB2C7C150B006DAE23 /* MacOsWidgetBundle.swift in Sources */,
+				0ABB89CB2C7C150B006DAE23 /* WidgetBundle.swift in Sources */,
 				0A0161F62C7D764E00437D8C /* NoSurfSpotView.swift in Sources */,
 				0A6238302C7ECBC0003B1679 /* SystemExtraLargeView.swift in Sources */,
 				0A0161F82C7D769E00437D8C /* EntryView.swift in Sources */,
@@ -425,7 +425,7 @@
 				0A0162032C7D778300437D8C /* GetGradeColor.swift in Sources */,
 				0A0EEE202C8024380035B6FD /* GetSurfSpotUrls.swift in Sources */,
 				0A0161F42C7D75EE00437D8C /* SurfSpotView.swift in Sources */,
-				0ABB89CD2C7C150B006DAE23 /* MacOsWidget.swift in Sources */,
+				0ABB89CD2C7C150B006DAE23 /* Widget.swift in Sources */,
 				0A0162062C7D77C900437D8C /* TimelineProvider.swift in Sources */,
 				0A15027F2C7DA16200339813 /* WebScraper.swift in Sources */,
 				0A62382E2C7ECBB2003B1679 /* SystemLargeView.swift in Sources */,
@@ -437,7 +437,7 @@
 /* Begin PBXTargetDependency section */
 		0ABB89D52C7C150B006DAE23 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0ABB89C22C7C150B006DAE23 /* macOs-widgetExtension */;
+			target = 0ABB89C22C7C150B006DAE23 /* widgetExtension */;
 			targetProxy = 0ABB89D42C7C150B006DAE23 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -624,15 +624,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = "macOs-widget/macOs_widget.entitlements";
+				CODE_SIGN_ENTITLEMENTS = widget/widget.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NPRMYP26B7;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "macOs-widget/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "macOs-widget";
+				INFOPLIST_FILE = widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = widget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -641,7 +641,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hydeit.surf-forecast.macOs-widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hydeit.surf-forecast.widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -654,15 +654,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = "macOs-widget/macOs_widget.entitlements";
+				CODE_SIGN_ENTITLEMENTS = widget/widget.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NPRMYP26B7;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "macOs-widget/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "macOs-widget";
+				INFOPLIST_FILE = widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = widget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -671,7 +671,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hydeit.surf-forecast.macOs-widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hydeit.surf-forecast.widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -700,7 +700,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0ABB89D72C7C150B006DAE23 /* Build configuration list for PBXNativeTarget "macOs-widgetExtension" */ = {
+		0ABB89D72C7C150B006DAE23 /* Build configuration list for PBXNativeTarget "widgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0ABB89D82C7C150B006DAE23 /* Debug */,
