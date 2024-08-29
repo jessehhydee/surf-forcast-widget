@@ -19,7 +19,7 @@
                BlueprintIdentifier = "0ABB89C22C7C150B006DAE23"
                BuildableName = "widgetExtension.appex"
                BlueprintName = "widgetExtension"
-               ReferencedContainer = "container:surf-forecast.xcodeproj">
+               ReferencedContainer = "container:Surf Forecast.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,9 +31,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0ABB89AC2C7C1489006DAE23"
-               BuildableName = "surf-forecast.app"
-               BlueprintName = "surf-forecast"
-               ReferencedContainer = "container:surf-forecast.xcodeproj">
+               BuildableName = "Surf Forecast.app"
+               BlueprintName = "Surf Forecast"
+               ReferencedContainer = "container:Surf Forecast.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -66,16 +66,16 @@
             BlueprintIdentifier = "0ABB89C22C7C150B006DAE23"
             BuildableName = "widgetExtension.appex"
             BlueprintName = "widgetExtension"
-            ReferencedContainer = "container:surf-forecast.xcodeproj">
+            ReferencedContainer = "container:Surf Forecast.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0ABB89AC2C7C1489006DAE23"
-            BuildableName = "surf-forecast.app"
-            BlueprintName = "surf-forecast"
-            ReferencedContainer = "container:surf-forecast.xcodeproj">
+            BuildableName = "Surf Forecast.app"
+            BlueprintName = "Surf Forecast"
+            ReferencedContainer = "container:Surf Forecast.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <EnvironmentVariables>
@@ -109,9 +109,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0ABB89AC2C7C1489006DAE23"
-            BuildableName = "surf-forecast.app"
-            BlueprintName = "surf-forecast"
-            ReferencedContainer = "container:surf-forecast.xcodeproj">
+            BuildableName = "Surf Forecast.app"
+            BlueprintName = "Surf Forecast"
+            ReferencedContainer = "container:Surf Forecast.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

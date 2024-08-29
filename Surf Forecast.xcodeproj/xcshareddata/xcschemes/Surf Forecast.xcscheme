@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0ABB89AC2C7C1489006DAE23"
-               BuildableName = "surf-forecast.app"
-               BlueprintName = "surf-forecast"
-               ReferencedContainer = "container:surf-forecast.xcodeproj">
+               BuildableName = "Surf Forecast.app"
+               BlueprintName = "Surf Forecast"
+               ReferencedContainer = "container:Surf Forecast.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0ABB89AC2C7C1489006DAE23"
-            BuildableName = "surf-forecast.app"
-            BlueprintName = "surf-forecast"
-            ReferencedContainer = "container:surf-forecast.xcodeproj">
+            BuildableName = "Surf Forecast.app"
+            BlueprintName = "Surf Forecast"
+            ReferencedContainer = "container:Surf Forecast.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0ABB89AC2C7C1489006DAE23"
-            BuildableName = "surf-forecast.app"
-            BlueprintName = "surf-forecast"
-            ReferencedContainer = "container:surf-forecast.xcodeproj">
+            BuildableName = "Surf Forecast.app"
+            BlueprintName = "Surf Forecast"
+            ReferencedContainer = "container:Surf Forecast.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

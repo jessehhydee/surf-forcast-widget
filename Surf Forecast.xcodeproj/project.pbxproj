@@ -88,7 +88,7 @@
 		0A62382D2C7ECBB2003B1679 /* SystemLargeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemLargeView.swift; sourceTree = "<group>"; };
 		0A62382F2C7ECBC0003B1679 /* SystemExtraLargeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemExtraLargeView.swift; sourceTree = "<group>"; };
 		0A6238312C7EE5BB003B1679 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		0ABB89AD2C7C1489006DAE23 /* surf-forecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "surf-forecast.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ABB89AD2C7C1489006DAE23 /* Surf Forecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Surf Forecast.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ABB89B02C7C1489006DAE23 /* SurfForecastApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfForecastApp.swift; sourceTree = "<group>"; };
 		0ABB89B22C7C1489006DAE23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0ABB89B42C7C148A006DAE23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -223,7 +223,7 @@
 		0ABB89A42C7C1489006DAE23 = {
 			isa = PBXGroup;
 			children = (
-				0ABB89AF2C7C1489006DAE23 /* surf-forecast */,
+				0ABB89AF2C7C1489006DAE23 /* Surf Forecast */,
 				0ABB89C92C7C150B006DAE23 /* widget */,
 				0ABB89C42C7C150B006DAE23 /* Frameworks */,
 				0ABB89AE2C7C1489006DAE23 /* Products */,
@@ -233,13 +233,13 @@
 		0ABB89AE2C7C1489006DAE23 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0ABB89AD2C7C1489006DAE23 /* surf-forecast.app */,
+				0ABB89AD2C7C1489006DAE23 /* Surf Forecast.app */,
 				0ABB89C32C7C150B006DAE23 /* widgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0ABB89AF2C7C1489006DAE23 /* surf-forecast */ = {
+		0ABB89AF2C7C1489006DAE23 /* Surf Forecast */ = {
 			isa = PBXGroup;
 			children = (
 				0A0EEE162C7FD97D0035B6FD /* Observables */,
@@ -251,7 +251,7 @@
 				0ABB89B92C7C148A006DAE23 /* surf_forecast.entitlements */,
 				0ABB89B62C7C148A006DAE23 /* Preview Content */,
 			);
-			path = "surf-forecast";
+			path = "Surf Forecast";
 			sourceTree = "<group>";
 		};
 		0ABB89B62C7C148A006DAE23 /* Preview Content */ = {
@@ -290,9 +290,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0ABB89AC2C7C1489006DAE23 /* surf-forecast */ = {
+		0ABB89AC2C7C1489006DAE23 /* Surf Forecast */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0ABB89BC2C7C148A006DAE23 /* Build configuration list for PBXNativeTarget "surf-forecast" */;
+			buildConfigurationList = 0ABB89BC2C7C148A006DAE23 /* Build configuration list for PBXNativeTarget "Surf Forecast" */;
 			buildPhases = (
 				0ABB89A92C7C1489006DAE23 /* Sources */,
 				0ABB89AA2C7C1489006DAE23 /* Frameworks */,
@@ -304,12 +304,12 @@
 			dependencies = (
 				0ABB89D52C7C150B006DAE23 /* PBXTargetDependency */,
 			);
-			name = "surf-forecast";
+			name = "Surf Forecast";
 			packageProductDependencies = (
 				0ABC9C952C7EB25300A4DB19 /* SwiftSoup */,
 			);
-			productName = "surf-forecast";
-			productReference = 0ABB89AD2C7C1489006DAE23 /* surf-forecast.app */;
+			productName = "Surf Forecast";
+			productReference = 0ABB89AD2C7C1489006DAE23 /* Surf Forecast.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0ABB89C22C7C150B006DAE23 /* widgetExtension */ = {
@@ -350,7 +350,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0ABB89A82C7C1489006DAE23 /* Build configuration list for PBXProject "surf-forecast" */;
+			buildConfigurationList = 0ABB89A82C7C1489006DAE23 /* Build configuration list for PBXProject "Surf Forecast" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -366,7 +366,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0ABB89AC2C7C1489006DAE23 /* surf-forecast */,
+				0ABB89AC2C7C1489006DAE23 /* Surf Forecast */,
 				0ABB89C22C7C150B006DAE23 /* widgetExtension */,
 			);
 		};
@@ -567,12 +567,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "surf-forecast/surf_forecast.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Surf Forecast/surf_forecast.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"surf-forecast/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Surf Forecast/Preview Content\"";
 				DEVELOPMENT_TEAM = NPRMYP26B7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -596,12 +596,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "surf-forecast/surf_forecast.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Surf Forecast/surf_forecast.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"surf-forecast/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Surf Forecast/Preview Content\"";
 				DEVELOPMENT_TEAM = NPRMYP26B7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -682,7 +682,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0ABB89A82C7C1489006DAE23 /* Build configuration list for PBXProject "surf-forecast" */ = {
+		0ABB89A82C7C1489006DAE23 /* Build configuration list for PBXProject "Surf Forecast" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0ABB89BA2C7C148A006DAE23 /* Debug */,
@@ -691,7 +691,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0ABB89BC2C7C148A006DAE23 /* Build configuration list for PBXNativeTarget "surf-forecast" */ = {
+		0ABB89BC2C7C148A006DAE23 /* Build configuration list for PBXNativeTarget "Surf Forecast" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0ABB89BD2C7C148A006DAE23 /* Debug */,
