@@ -20,6 +20,8 @@
 		0A0162112C7D791000437D8C /* GetGradeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162102C7D791000437D8C /* GetGradeColor.swift */; };
 		0A0162132C7D794C00437D8C /* SurfSpots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162122C7D794C00437D8C /* SurfSpots.swift */; };
 		0A0162182C7D79C200437D8C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162172C7D79C200437D8C /* ColorExtension.swift */; };
+		0A0EEE1A2C7FDE490035B6FD /* SurfSpotsObserv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0EEE192C7FDE490035B6FD /* SurfSpotsObserv.swift */; };
+		0A0EEE1E2C7FE6850035B6FD /* SurfSpotUrlsObserv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0EEE1D2C7FE6850035B6FD /* SurfSpotUrlsObserv.swift */; };
 		0A15027F2C7DA16200339813 /* WebScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A15027E2C7DA16200339813 /* WebScraper.swift */; };
 		0A1502812C7DA2EA00339813 /* WebScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1502802C7DA2EA00339813 /* WebScraper.swift */; };
 		0A62382E2C7ECBB2003B1679 /* SystemLargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62382D2C7ECBB2003B1679 /* SystemLargeView.swift */; };
@@ -77,6 +79,8 @@
 		0A0162102C7D791000437D8C /* GetGradeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGradeColor.swift; sourceTree = "<group>"; };
 		0A0162122C7D794C00437D8C /* SurfSpots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfSpots.swift; sourceTree = "<group>"; };
 		0A0162172C7D79C200437D8C /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		0A0EEE192C7FDE490035B6FD /* SurfSpotsObserv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfSpotsObserv.swift; sourceTree = "<group>"; };
+		0A0EEE1D2C7FE6850035B6FD /* SurfSpotUrlsObserv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfSpotUrlsObserv.swift; sourceTree = "<group>"; };
 		0A15027E2C7DA16200339813 /* WebScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebScraper.swift; sourceTree = "<group>"; };
 		0A1502802C7DA2EA00339813 /* WebScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebScraper.swift; sourceTree = "<group>"; };
 		0A62382D2C7ECBB2003B1679 /* SystemLargeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemLargeView.swift; sourceTree = "<group>"; };
@@ -204,6 +208,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		0A0EEE162C7FD97D0035B6FD /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				0A0EEE192C7FDE490035B6FD /* SurfSpotsObserv.swift */,
+				0A0EEE1D2C7FE6850035B6FD /* SurfSpotUrlsObserv.swift */,
+			);
+			path = Observables;
+			sourceTree = "<group>";
+		};
 		0ABB89A42C7C1489006DAE23 = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +239,7 @@
 		0ABB89AF2C7C1489006DAE23 /* surf-forcast-widget */ = {
 			isa = PBXGroup;
 			children = (
+				0A0EEE162C7FD97D0035B6FD /* Observables */,
 				0A01620B2C7D788700437D8C /* Views */,
 				0A01620A2C7D788000437D8C /* Types */,
 				0A0162092C7D787A00437D8C /* Functions */,
@@ -384,8 +398,10 @@
 				0ABB89B32C7C1489006DAE23 /* ContentView.swift in Sources */,
 				0A1502812C7DA2EA00339813 /* WebScraper.swift in Sources */,
 				0A6238322C7EE5BB003B1679 /* SettingsView.swift in Sources */,
+				0A0EEE1A2C7FDE490035B6FD /* SurfSpotsObserv.swift in Sources */,
 				0A0162182C7D79C200437D8C /* ColorExtension.swift in Sources */,
 				0A01620D2C7D78A200437D8C /* SurfSpotView.swift in Sources */,
+				0A0EEE1E2C7FE6850035B6FD /* SurfSpotUrlsObserv.swift in Sources */,
 				0A0162132C7D794C00437D8C /* SurfSpots.swift in Sources */,
 				0ABB89B12C7C1489006DAE23 /* SurfForcastWidgetApp.swift in Sources */,
 				0A01620F2C7D78AD00437D8C /* NoSurfSpotView.swift in Sources */,
@@ -548,10 +564,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "surf-forcast-widget/surf_forcast_widget.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"surf-forcast-widget/Preview Content\"";
+				DEVELOPMENT_TEAM = NPRMYP26B7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -574,10 +592,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "surf-forcast-widget/surf_forcast_widget.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"surf-forcast-widget/Preview Content\"";
+				DEVELOPMENT_TEAM = NPRMYP26B7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -599,8 +619,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = "macOs-widget/macOs_widget.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NPRMYP26B7;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOs-widget/Info.plist";
@@ -627,8 +649,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = "macOs-widget/macOs_widget.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NPRMYP26B7;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOs-widget/Info.plist";

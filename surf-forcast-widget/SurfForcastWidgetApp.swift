@@ -21,22 +21,18 @@ struct VisualEffectView: NSViewRepresentable {
 
 @main
 struct SurfForecastWidgetApp: App {
-    let spots = SurflineWebScraper()
-    
-//    init() {
-//        WidgetCenter.shared.reloadAllTimelines()
-//    }
+    @StateObject var spotsObserv = SurfSpotsObserv()
  
     var body: some Scene {
         WindowGroup {
-            ContentView(spots: spots)
+            ContentView(spotsObserv: spotsObserv)
             .background(VisualEffectView().ignoresSafeArea())
             .fixedSize()
         }
         .windowResizability(.contentSize)
         
         Settings {
-            SettingsView()
+            SettingsView(spotUrlsObserv: SurfSpotUrlsObserv(surfSpotsObserv: spotsObserv))
         }
     }
 }

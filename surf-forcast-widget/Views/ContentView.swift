@@ -8,29 +8,39 @@
 import SwiftUI
 
 struct ContentView: View {
-    let spots: [Spot]?
+    @ObservedObject var spotsObserv: SurfSpotsObserv
     
     var body: some View {
-        HStack(alignment: .top, spacing: 7.0) {
-            VStack(alignment: .leading, spacing: 7.0) {
-                if (spots != nil && spots!.count > 0) {
-                    ForEach(spots!.prefix(3), id: \.self.name) { spot in
-                        SurfSpotView(spotInfo: spot)
-                    }
-                } else {
-                    NoSurfSpotView()
-                }
-            }
-            .frame(minWidth: 340, maxWidth: 600)
-            if (spots != nil && spots!.count > 3) {
+        if (spotsObserv.surfSpots.count > 1) {
+            HStack(alignment: .top, spacing: 7.0) {
                 VStack(alignment: .leading, spacing: 7.0) {
-                    ForEach(Array(spots!.dropFirst(3)), id: \.self.name) { spot in
-                        SurfSpotView(spotInfo: spot)
+                    if (spotsObserv.surfSpots.count > 0) {
+                        ForEach(spotsObserv.surfSpots.prefix(3), id: \.self.name) { spot in
+                            SurfSpotView(spotInfo: spot)
+                        }
+                    } else {
+                        NoSurfSpotView()
                     }
                 }
                 .frame(minWidth: 340, maxWidth: 600)
+                if (spotsObserv.surfSpots.count > 3) {
+                    VStack(alignment: .leading, spacing: 7.0) {
+                        ForEach(Array(spotsObserv.surfSpots.dropFirst(3)), id: \.self.name) { spot in
+                            SurfSpotView(spotInfo: spot)
+                        }
+                    }
+                    .frame(minWidth: 340, maxWidth: 600)
+                }
             }
+            .padding(.all, 10.0)
         }
-        .padding(.all, 10.0)
+        else {
+            VStack {
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle(tint: .blue))
+                    .scaleEffect(0.6, anchor: .center)
+            }
+            .frame(minWidth: 400, minHeight: 200)
+        }
     }
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftSoup
 
-// For testing
+// For testing UI quickly
 private let dummyData: [Spot] = [
     Spot(
         name: "Taylors Mistake",
@@ -52,21 +52,30 @@ private let dummyData: [Spot] = [
     ),
 ]
 
-func SurflineWebScraper() -> [Spot]? {
-    return dummyData;
+private func FetchFromURL(_ url: String) async -> String {
+    do {
+        let (theStringAsData, _) = try await URLSession.shared.data(from: URL(string: url)!)
+        if let returnableString = String(data: theStringAsData, encoding: .utf8)
+        {
+            return returnableString
+        } else {
+            return ""
+        }
+    }
+    catch {
+        print("Error: \(error)")
+    }
     
-    let spotUrls = [
-        "https://www.surfline.com/surf-report/taylors-mistake/584204204e65fad6a770967e",
-        "https://www.surfline.com/surf-report/sumner-bar-christchurch-/6178681b18da23e5802a4a10",
-        "https://www.surfline.com/surf-report/new-brighton-pier/584204204e65fad6a770967d"
-    ]
+    return ""
+}
+
+func SurflineWebScraper(spotUrls: [String]) async -> [Spot] {
+//    return dummyData;
     var surfSpots: [Spot] = []
     
     for spotUrl in spotUrls {
-        let response = URL(string: spotUrl)!
-        
+        let html = await FetchFromURL(spotUrl)
         do {
-            let html = try String(contentsOf: response)
             let document = try SwiftSoup.parse(html)
             
             surfSpots.append(
