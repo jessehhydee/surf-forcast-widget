@@ -12,7 +12,7 @@ import SwiftUI
 
     init() {
         Task {
-            self.surfSpots = await SurflineWebScraper(spotUrls: UserDefaults.standard.array(forKey: "surfSpotUrls") as? [String] ?? [])
+            self.surfSpots = await SurflineWebScraper(spotUrls: UserDefaults(suiteName: "NPRMYP26B7.group.com.hydeit.surf-forcast-widget")?.array(forKey: "surfSpotUrls") as? [String] ?? [])
         }
     }
 }

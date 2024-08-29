@@ -8,7 +8,7 @@
 import WidgetKit
 import SwiftSoup
 
-// For testing
+// For testing UI quickly
 private var dummyData: [Spot] = [
     Spot(
         name: "Taylors Mistake",
@@ -52,15 +52,10 @@ private var dummyData: [Spot] = [
     ),
 ]
 
-func SurflineWebScraper(amountOfSpotsToBeReturned: Int) -> [Spot]? {
-    return dummyData;
+func SurflineWebScraper(spotUrls: [String], amountOfSpotsToBeReturned: Int) -> [Spot]? {
+//    return dummyData;
         
-    var spotUrls = [
-        "https://www.surfline.com/surf-report/taylors-mistake/584204204e65fad6a770967e",
-        "https://www.surfline.com/surf-report/sumner-bar-christchurch-/6178681b18da23e5802a4a10",
-        "https://www.surfline.com/surf-report/new-brighton-pier/584204204e65fad6a770967d",
-        "https://www.surfline.com/surf-report/punakaiki-rivermouth/61942fc420e4d5661d10bcf8"
-    ]
+    var spotUrls = spotUrls
     if (spotUrls.count > amountOfSpotsToBeReturned) {
         spotUrls.removeSubrange(amountOfSpotsToBeReturned..<spotUrls.count)
     }

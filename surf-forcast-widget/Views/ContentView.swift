@@ -11,7 +11,7 @@ struct ContentView: View {
     @ObservedObject var spotsObserv: SurfSpotsObserv
     
     var body: some View {
-        if (spotsObserv.surfSpots.count > 1) {
+        if (spotsObserv.surfSpots.count > 0) {
             HStack(alignment: .top, spacing: 7.0) {
                 VStack(alignment: .leading, spacing: 7.0) {
                     if (spotsObserv.surfSpots.count > 0) {

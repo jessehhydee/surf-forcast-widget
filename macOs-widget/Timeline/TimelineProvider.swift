@@ -44,8 +44,10 @@ struct ForecastProvider: TimelineProvider {
         
         for hourOffset in 0 ..< 6 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let spots = SurflineWebScraper(amountOfSpotsToBeReturned: amountOfSpotsAllowed)!
-            print(spots)
+            print("IN PROV")
+            let spotUrls = GetSurfSpotUrls()
+            print(spotUrls)
+            let spots = SurflineWebScraper(spotUrls: spotUrls, amountOfSpotsToBeReturned: amountOfSpotsAllowed)!
             let entry = ForecastEntry(date: entryDate, spots: spots)
             entries.append(entry)
         }

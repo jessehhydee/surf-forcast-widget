@@ -11,7 +11,7 @@ import SwiftUI
     @ObservedObject var spotsObserv: SurfSpotsObserv
     @Published var surfSpotUrls: [String] {
         didSet {
-            UserDefaults.standard.set(surfSpotUrls, forKey: "surfSpotUrls")
+            UserDefaults(suiteName: "NPRMYP26B7.group.com.hydeit.surf-forcast-widget")?.set(surfSpotUrls, forKey: "surfSpotUrls")
             Task {
                 spotsObserv.surfSpots = await SurflineWebScraper(spotUrls: surfSpotUrls)
             }
@@ -20,6 +20,6 @@ import SwiftUI
 
     init(surfSpotsObserv: SurfSpotsObserv) {
         self.spotsObserv = surfSpotsObserv
-        self.surfSpotUrls = UserDefaults.standard.array(forKey: "surfSpotUrls") as? [String] ?? []
+        self.surfSpotUrls = UserDefaults(suiteName: "NPRMYP26B7.group.com.hydeit.surf-forcast-widget")?.array(forKey: "surfSpotUrls") as? [String] ?? []
     }
 }

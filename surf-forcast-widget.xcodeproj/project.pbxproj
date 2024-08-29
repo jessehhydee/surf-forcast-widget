@@ -22,6 +22,7 @@
 		0A0162182C7D79C200437D8C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0162172C7D79C200437D8C /* ColorExtension.swift */; };
 		0A0EEE1A2C7FDE490035B6FD /* SurfSpotsObserv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0EEE192C7FDE490035B6FD /* SurfSpotsObserv.swift */; };
 		0A0EEE1E2C7FE6850035B6FD /* SurfSpotUrlsObserv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0EEE1D2C7FE6850035B6FD /* SurfSpotUrlsObserv.swift */; };
+		0A0EEE202C8024380035B6FD /* GetSurfSpotUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0EEE1F2C8024380035B6FD /* GetSurfSpotUrls.swift */; };
 		0A15027F2C7DA16200339813 /* WebScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A15027E2C7DA16200339813 /* WebScraper.swift */; };
 		0A1502812C7DA2EA00339813 /* WebScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1502802C7DA2EA00339813 /* WebScraper.swift */; };
 		0A62382E2C7ECBB2003B1679 /* SystemLargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62382D2C7ECBB2003B1679 /* SystemLargeView.swift */; };
@@ -81,6 +82,7 @@
 		0A0162172C7D79C200437D8C /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		0A0EEE192C7FDE490035B6FD /* SurfSpotsObserv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfSpotsObserv.swift; sourceTree = "<group>"; };
 		0A0EEE1D2C7FE6850035B6FD /* SurfSpotUrlsObserv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfSpotUrlsObserv.swift; sourceTree = "<group>"; };
+		0A0EEE1F2C8024380035B6FD /* GetSurfSpotUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSurfSpotUrls.swift; sourceTree = "<group>"; };
 		0A15027E2C7DA16200339813 /* WebScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebScraper.swift; sourceTree = "<group>"; };
 		0A1502802C7DA2EA00339813 /* WebScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebScraper.swift; sourceTree = "<group>"; };
 		0A62382D2C7ECBB2003B1679 /* SystemLargeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemLargeView.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			children = (
 				0A0162022C7D778300437D8C /* GetGradeColor.swift */,
 				0A15027E2C7DA16200339813 /* WebScraper.swift */,
+				0A0EEE1F2C8024380035B6FD /* GetSurfSpotUrls.swift */,
 			);
 			path = Functions;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				0A0161FE2C7D773900437D8C /* SurfSpots.swift in Sources */,
 				0A0162082C7D77D100437D8C /* TimelineEntry.swift in Sources */,
 				0A0162032C7D778300437D8C /* GetGradeColor.swift in Sources */,
+				0A0EEE202C8024380035B6FD /* GetSurfSpotUrls.swift in Sources */,
 				0A0161F42C7D75EE00437D8C /* SurfSpotView.swift in Sources */,
 				0ABB89CD2C7C150B006DAE23 /* MacOsWidget.swift in Sources */,
 				0A0162062C7D77C900437D8C /* TimelineProvider.swift in Sources */,
@@ -572,6 +576,7 @@
 				DEVELOPMENT_TEAM = NPRMYP26B7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Surf Forcast";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -600,6 +605,7 @@
 				DEVELOPMENT_TEAM = NPRMYP26B7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Surf Forcast";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

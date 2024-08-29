@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftSoup
+import WidgetKit
 
 // For testing UI quickly
 private let dummyData: [Spot] = [
@@ -93,6 +94,8 @@ func SurflineWebScraper(spotUrls: [String]) async -> [Spot] {
             print("Error: \(error)")
         }
     }
+    
+    WidgetCenter.shared.reloadAllTimelines()
     
     return surfSpots
 }
