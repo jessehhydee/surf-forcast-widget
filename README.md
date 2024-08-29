@@ -17,3 +17,16 @@ It allows for quick and easy viewing of each spot, displaying the following data
 
 Data is kept up-to-date by frequent web scraping of Surflines site within the application.
 
+## Screenshots
+
+### MacOS Application
+
+![alt text](https://github.com/jessehhydee/surf-forecast-widget/blob/main/assets/macos-app-screenshot.png?raw=true)
+
+### Extra Large Widget
+
+![alt text](https://github.com/jessehhydee/surf-forecast-widget/blob/main/assets/widget-extra-large-screenshot.png?raw=true)
+
+### Large Widget
+
+![alt text](https://github.com/jessehhydee/surf-forecast-widget/blob/main/assets//widget-large-screenshot.png?raw=true)
