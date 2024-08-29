@@ -88,7 +88,7 @@
 		0A62382D2C7ECBB2003B1679 /* SystemLargeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemLargeView.swift; sourceTree = "<group>"; };
 		0A62382F2C7ECBC0003B1679 /* SystemExtraLargeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemExtraLargeView.swift; sourceTree = "<group>"; };
 		0A6238312C7EE5BB003B1679 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		0ABB89AD2C7C1489006DAE23 /* surf-forcast-widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "surf-forcast-widget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ABB89AD2C7C1489006DAE23 /* surf-forecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "surf-forecast.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ABB89B02C7C1489006DAE23 /* SurfForcastWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfForcastWidgetApp.swift; sourceTree = "<group>"; };
 		0ABB89B22C7C1489006DAE23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0ABB89B42C7C148A006DAE23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -233,7 +233,7 @@
 		0ABB89AE2C7C1489006DAE23 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0ABB89AD2C7C1489006DAE23 /* surf-forcast-widget.app */,
+				0ABB89AD2C7C1489006DAE23 /* surf-forecast.app */,
 				0ABB89C32C7C150B006DAE23 /* macOs-widgetExtension.appex */,
 			);
 			name = Products;
@@ -290,9 +290,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0ABB89AC2C7C1489006DAE23 /* surf-forcast-widget */ = {
+		0ABB89AC2C7C1489006DAE23 /* surf-forecast */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0ABB89BC2C7C148A006DAE23 /* Build configuration list for PBXNativeTarget "surf-forcast-widget" */;
+			buildConfigurationList = 0ABB89BC2C7C148A006DAE23 /* Build configuration list for PBXNativeTarget "surf-forecast" */;
 			buildPhases = (
 				0ABB89A92C7C1489006DAE23 /* Sources */,
 				0ABB89AA2C7C1489006DAE23 /* Frameworks */,
@@ -304,12 +304,12 @@
 			dependencies = (
 				0ABB89D52C7C150B006DAE23 /* PBXTargetDependency */,
 			);
-			name = "surf-forcast-widget";
+			name = "surf-forecast";
 			packageProductDependencies = (
 				0ABC9C952C7EB25300A4DB19 /* SwiftSoup */,
 			);
 			productName = "surf-forcast-widget";
-			productReference = 0ABB89AD2C7C1489006DAE23 /* surf-forcast-widget.app */;
+			productReference = 0ABB89AD2C7C1489006DAE23 /* surf-forecast.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0ABB89C22C7C150B006DAE23 /* macOs-widgetExtension */ = {
@@ -350,7 +350,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0ABB89A82C7C1489006DAE23 /* Build configuration list for PBXProject "surf-forcast-widget" */;
+			buildConfigurationList = 0ABB89A82C7C1489006DAE23 /* Build configuration list for PBXProject "surf-forecast" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -366,7 +366,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0ABB89AC2C7C1489006DAE23 /* surf-forcast-widget */,
+				0ABB89AC2C7C1489006DAE23 /* surf-forecast */,
 				0ABB89C22C7C150B006DAE23 /* macOs-widgetExtension */,
 			);
 		};
@@ -576,7 +576,7 @@
 				DEVELOPMENT_TEAM = NPRMYP26B7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Surf Forcast";
+				INFOPLIST_KEY_CFBundleDisplayName = "Surf Forecast";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -605,7 +605,7 @@
 				DEVELOPMENT_TEAM = NPRMYP26B7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Surf Forcast";
+				INFOPLIST_KEY_CFBundleDisplayName = "Surf Forecast";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -682,7 +682,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0ABB89A82C7C1489006DAE23 /* Build configuration list for PBXProject "surf-forcast-widget" */ = {
+		0ABB89A82C7C1489006DAE23 /* Build configuration list for PBXProject "surf-forecast" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0ABB89BA2C7C148A006DAE23 /* Debug */,
@@ -691,7 +691,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0ABB89BC2C7C148A006DAE23 /* Build configuration list for PBXNativeTarget "surf-forcast-widget" */ = {
+		0ABB89BC2C7C148A006DAE23 /* Build configuration list for PBXNativeTarget "surf-forecast" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0ABB89BD2C7C148A006DAE23 /* Debug */,
