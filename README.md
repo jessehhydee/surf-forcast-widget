@@ -29,4 +29,10 @@ Data is kept up-to-date by frequent web scraping of Surflines site within the ap
 
 ### Large Widget
 
-![alt text](https://github.com/jessehhydee/surf-forecast-widget/blob/main/assets//widget-large-screenshot.png?raw=true)
+![alt text](https://github.com/jessehhydee/surf-forecast-widget/blob/main/assets/widget-large-screenshot.png?raw=true)
+
+## How to add surf spots
+
+Open the application & head to the apps settings. From here; Add, re-order or remove surf spots.
+
+![alt text](https://github.com/jessehhydee/surf-forecast-widget/blob/main/assets/settings-screenshot.png?raw=true)
