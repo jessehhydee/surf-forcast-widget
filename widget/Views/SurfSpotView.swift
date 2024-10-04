@@ -15,6 +15,7 @@ struct SurfSpotView: View {
             Text(spotInfo.name)
                 .font(.headline)
                 .fontWeight(.bold)
+                .foregroundColor(Color(hex: 0x000000))
             HStack(alignment: .top) {
                 Capsule()
                     .fill(Color(hex: GetGradeColor(grade: spotInfo.grade)))
@@ -29,9 +30,11 @@ struct SurfSpotView: View {
                             Text(spotInfo.sizeFt)
                                 .font(.title2)
                                 .fontWeight(.bold)
+                                .foregroundColor(Color(hex: 0x000000))
                             Text("ft")
                                 .font(.subheadline)
                                 .fontWeight(.bold)
+                                .foregroundColor(Color(hex: 0x000000))
                         }
                         Text(spotInfo.grade)
                             .font(.headline)
@@ -48,9 +51,11 @@ struct SurfSpotView: View {
                             Text(spotInfo.windSpeed)
                                 .font(.title2)
                                 .fontWeight(.bold)
+                                .foregroundColor(Color(hex: 0x000000))
                             Text("kts")
                                 .font(.subheadline)
                                 .fontWeight(.bold)
+                                .foregroundColor(Color(hex: 0x000000))
                         }
                     }
                 }
